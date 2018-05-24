@@ -1,0 +1,8 @@
+SUCCESS - Test new-test-suite-translateMessageTest2 finished Successfully.
+SUCCESS - Test new-test-suite-detectLanguageTest finished Successfully.
+SUCCESS - Test new-test-suite-post:/messages:application/json:apiConfigTest finished Successfully.
+SUCCESS - Test new-test-suite-translateMessageTest finished Successfully.
+
+=============================================================================
+Tests run: 4 - Failures: 0 - Errors: 0 - Skipped: 0 - Time elapsed: 2.730 sec
+=============================================================================

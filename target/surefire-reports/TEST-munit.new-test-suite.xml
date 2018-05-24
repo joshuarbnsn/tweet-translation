@@ -1,0 +1,71 @@
+<testsuite name="new-test-suite" time="2.73" failures="0" errors="0" skipped="0" tests="4">
+  <properties>
+    <property key="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property key="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib"/>
+    <property key="java.vm.version" value="25.144-b01"/>
+    <property key="gopherProxySet" value="false"/>
+    <property key="maven.multiModuleProjectDirectory" value="/Users/joshrobinson/Development/Repositories/tweet-translation"/>
+    <property key="java.vm.vendor" value="Oracle Corporation"/>
+    <property key="java.vendor.url" value="http://java.oracle.com/"/>
+    <property key="guice.disable.misplaced.annotation.check" value="true"/>
+    <property key="path.separator" value=":"/>
+    <property key="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property key="file.encoding.pkg" value="sun.io"/>
+    <property key="user.country" value="US"/>
+    <property key="sun.java.launcher" value="SUN_STANDARD"/>
+    <property key="sun.os.patch.level" value="unknown"/>
+    <property key="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property key="user.dir" value="/Users/joshrobinson/Development/Repositories/tweet-translation"/>
+    <property key="java.runtime.version" value="1.8.0_144-b01"/>
+    <property key="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property key="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property key="os.arch" value="x86_64"/>
+    <property key="java.io.tmpdir" value="/var/folders/dp/mfrqlx_x6c315vjgypyk0qzc0000gn/T/"/>
+    <property key="line.separator" value="&#xa;"/>
+    <property key="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property key="os.name" value="Mac OS X"/>
+    <property key="classworlds.conf" value="/Users/joshrobinson/Development/Utilities/apache-maven-3.5.3/bin/m2.conf"/>
+    <property key="sun.jnu.encoding" value="UTF-8"/>
+    <property key="java.library.path" value="/Users/joshrobinson/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property key="maven.conf" value="/Users/joshrobinson/Development/Utilities/apache-maven-3.5.3/conf"/>
+    <property key="java.specification.name" value="Java Platform API Specification"/>
+    <property key="java.class.version" value="52.0"/>
+    <property key="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property key="os.version" value="10.13.4"/>
+    <property key="library.jansi.path" value="/Users/joshrobinson/Development/Utilities/apache-maven-3.5.3/lib/jansi-native"/>
+    <property key="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property key="user.home" value="/Users/joshrobinson"/>
+    <property key="user.timezone" value="America/New_York"/>
+    <property key="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property key="file.encoding" value="UTF-8"/>
+    <property key="java.specification.version" value="1.8"/>
+    <property key="java.class.path" value="/Users/joshrobinson/Development/Utilities/apache-maven-3.5.3/boot/plexus-classworlds-2.5.2.jar"/>
+    <property key="user.name" value="joshrobinson"/>
+    <property key="java.vm.specification.version" value="1.8"/>
+    <property key="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean package"/>
+    <property key="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre"/>
+    <property key="sun.arch.data.model" value="64"/>
+    <property key="user.language" value="en"/>
+    <property key="java.specification.vendor" value="Oracle Corporation"/>
+    <property key="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property key="java.vm.info" value="mixed mode"/>
+    <property key="java.version" value="1.8.0_144"/>
+    <property key="java.ext.dirs" value="/Users/joshrobinson/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property key="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/classes"/>
+    <property key="java.vendor" value="Oracle Corporation"/>
+    <property key="maven.home" value="/Users/joshrobinson/Development/Utilities/apache-maven-3.5.3"/>
+    <property key="file.separator" value="/"/>
+    <property key="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property key="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property key="sun.cpu.endian" value="little"/>
+    <property key="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property key="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property key="sun.cpu.isalist" value=""/>
+    <property key="mule.testingMode" value="true"/>
+    <property key="mule.working.dir" value="/Users/joshrobinson/Development/Repositories/tweet-translation/target/.mule"/>
+  </properties>
+  <testcase time="0.027" name="new-test-suite-translateMessageTest2" classname="new-test-suite"/>
+  <testcase time="0.96" name="new-test-suite-detectLanguageTest" classname="new-test-suite"/>
+  <testcase time="0.154" name="new-test-suite-post:/messages:application/json:apiConfigTest" classname="new-test-suite"/>
+  <testcase time="0.056" name="new-test-suite-translateMessageTest" classname="new-test-suite"/>
+</testsuite>

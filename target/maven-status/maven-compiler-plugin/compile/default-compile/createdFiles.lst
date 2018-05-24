@@ -1,0 +1,6 @@
+com/mulesoft/demo/translation/dto/response/TranslationResponse.class
+com/mulesoft/demo/translation/dto/response/DetectLanguageResponseCollection.class
+com/mulesoft/demo/translation/transformers/DetectLanguages.class
+com/mulesoft/demo/translation/dto/input/Message.class
+com/mulesoft/demo/translation/transformers/MessageToTweet.class
+com/mulesoft/demo/translation/dto/response/DetectLanguageResponse.class

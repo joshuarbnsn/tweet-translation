@@ -1,0 +1,6 @@
+/Users/joshrobinson/Development/Repositories/tweet-translation/src/main/java/com/mulesoft/demo/translation/dto/response/TranslationResponse.java
+/Users/joshrobinson/Development/Repositories/tweet-translation/src/main/java/com/mulesoft/demo/translation/dto/input/Message.java
+/Users/joshrobinson/Development/Repositories/tweet-translation/src/main/java/com/mulesoft/demo/translation/dto/response/DetectLanguageResponse.java
+/Users/joshrobinson/Development/Repositories/tweet-translation/src/main/java/com/mulesoft/demo/translation/transformers/MessageToTweet.java
+/Users/joshrobinson/Development/Repositories/tweet-translation/src/main/java/com/mulesoft/demo/translation/dto/response/DetectLanguageResponseCollection.java
+/Users/joshrobinson/Development/Repositories/tweet-translation/src/main/java/com/mulesoft/demo/translation/transformers/DetectLanguages.java
