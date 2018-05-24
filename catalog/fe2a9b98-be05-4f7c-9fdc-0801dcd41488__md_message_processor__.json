@@ -1,0 +1,22 @@
+{
+    "inputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "#_custom_mule_metadata_type_#",
+            "typeId": "TranslationJson"
+        }
+    },
+    "outputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "#_custom_mule_metadata_type_#",
+            "typeId": "TranslationJava"
+        },
+        "flowVariables": {
+            "translation": {
+                "connectorName": "#_custom_mule_metadata_type_#",
+                "typeId": "Translation"
+            }
+        }
+    },
+    "id": "fe2a9b98-be05-4f7c-9fdc-0801dcd41488",
+    "version": "5.2.0.0"
+}

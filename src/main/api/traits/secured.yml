@@ -1,0 +1,9 @@
+headers:
+  user.id:
+    description: A system account with post permission
+    required: true
+    example: joshuarbnsn@gmail.com
+  password:
+    description: The password associated with the system account
+    required: true
+    example: Fmm!TRVL@2016
