@@ -1,0 +1,17 @@
+{
+	"title": "Message",	
+	"required": false,
+	"type": "object",
+	"properties": {
+	
+		"Text": { 
+			"type": "string"
+		},
+		"Tags" : {
+			"type": "string"
+		},
+		"Users" : {
+			"type": "string"
+		}
+	}
+}
