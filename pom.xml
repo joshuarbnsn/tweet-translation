@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.mycompany</groupId>
 	<artifactId>tweetTranslation</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.1-SNAPSHOT</version>
     <packaging>mule</packaging>
 	<name>Mule tweetTranslation Application</name>
 
@@ -18,8 +18,12 @@
     	<maven.compiler.source>1.8</maven.compiler.source>
     	<maven.compiler.target>1.8</maven.compiler.target>
     	
-	<munit.version>1.3.6</munit.version>
-    <mule.munit.support.version>3.9.0</mule.munit.support.version>
+		<munit.version>1.3.6</munit.version>
+    	<mule.munit.support.version>3.9.0</mule.munit.support.version>
+    	
+    	<anypoint.uri>https://anypoint.mulesoft.com</anypoint.uri>
+		<arm.target.type>server</arm.target.type>
+		<arm.environment>Sandbox</arm.environment>
     </properties>
 
 	<build>
@@ -91,11 +95,35 @@
                     <coverage>
                         <runCoverage>true</runCoverage>
                         <formats>
+                            <format>console</format>
                             <format>html</format>
                         </formats>
                     </coverage>
                 </configuration>
             </plugin>
+            <plugin>
+						<groupId>org.mule.tools.maven</groupId>
+						<artifactId>mule-maven-plugin</artifactId>
+						<configuration>
+							<deploymentType>arm</deploymentType>
+							<username>${anypoint.username}</username>
+							<password>${anypoint.password}</password>
+							<!-- <businessGroup>${anypoint.businessGroup}</businessGroup> -->
+							<uri>${anypoint.uri}</uri>
+							<target>${arm.target.name}</target>
+							<targetType>${arm.target.type}</targetType>
+							<environment>${arm.environment}</environment>
+						</configuration>
+						<executions>
+							<execution>
+								<id>deploy</id>
+								<phase>deploy</phase>
+								<goals>
+									<goal>deploy</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
         </plugins>
 	<testResources>
             <testResource>
