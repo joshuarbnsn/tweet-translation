@@ -5,7 +5,7 @@ pipeline {
             steps {
                 sh 'mvn --version'
 				sh 'mvn clean'
-				sh 'mvn package'
+				sh 'mvn package -P Mule'
             }
         }
         stage('Deploy ARM') {
