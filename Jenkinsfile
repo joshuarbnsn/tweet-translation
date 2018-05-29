@@ -5,9 +5,10 @@ pipeline {
             steps {
                 sh 'mvn --version'
 				sh 'mvn clean'
-				sh 'mvn package -P Mule'
+				sh 'mvn package'
             }
         }
+        
         stage('Deploy ARM') {
       		environment {
         		ANYPOINT_CREDENTIALS = credentials('anypoint.credentials')

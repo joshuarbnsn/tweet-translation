@@ -102,28 +102,28 @@
                 </configuration>
             </plugin>
             <plugin>
-						<groupId>org.mule.tools.maven</groupId>
-						<artifactId>mule-maven-plugin</artifactId>
-						<configuration>
-							<deploymentType>arm</deploymentType>
-							<username>${anypoint.username}</username>
-							<password>${anypoint.password}</password>
-							<!-- <businessGroup>${anypoint.businessGroup}</businessGroup> -->
-							<uri>${anypoint.uri}</uri>
-							<target>${arm.target.name}</target>
-							<targetType>${arm.target.type}</targetType>
-							<environment>${arm.environment}</environment>
-						</configuration>
-						<executions>
-							<execution>
-								<id>deploy</id>
-								<phase>deploy</phase>
-								<goals>
-									<goal>deploy</goal>
-								</goals>
-							</execution>
-						</executions>
-					</plugin>
+				<groupId>org.mule.tools.maven</groupId>
+				<artifactId>mule-maven-plugin</artifactId>
+				<configuration>
+					<deploymentType>arm</deploymentType>
+					<username>${anypoint.username}</username>
+					<password>${anypoint.password}</password>
+					<!-- <businessGroup>${anypoint.businessGroup}</businessGroup> -->
+					<uri>${anypoint.uri}</uri>
+					<target>${arm.target.name}</target>
+					<targetType>${arm.target.type}</targetType>
+					<environment>${arm.environment}</environment>
+				</configuration>
+				<executions>
+					<execution>
+						<id>deploy</id>
+						<phase>deploy</phase>
+						<goals>
+							<goal>deploy</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
         </plugins>
 	<testResources>
             <testResource>
