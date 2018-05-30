@@ -9,8 +9,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'mvn --version'
-				sh 'mvn clean'
-				sh 'mvn package -s ${MVN_SETTINGS}'
+				sh 'mvn clean deploy -s ${MVN_SETTINGS}'
             }
         }
         stage('Deploy ARM') {
