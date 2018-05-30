@@ -9,7 +9,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'mvn --version'
-				sh 'mvn clean package -s ${MVN_SETTINGS}'
+				sh 'mvn clean -s ${MVN_SETTINGS}'
             }
         }
         stage('Deploy ARM') {
@@ -17,7 +17,7 @@ pipeline {
         		ANYPOINT_CREDENTIALS = credentials('anypoint.credentials')
       		}
       		steps {
-        		sh 'mvn org.mule.tools.maven:mule-maven-plugin:deploy -Darm.target.name=local-runtime-3.9.1 -Danypoint.username=${ANYPOINT_CREDENTIALS_USR} -Danypoint.password=${ANYPOINT_CREDENTIALS_PSW}'
+        		sh 'mvn package org.mule.tools.maven:mule-maven-plugin:deploy -s ${MVN_SETTINGS} -Darm.target.name=local-runtime-3.9.1 -Danypoint.username=${ANYPOINT_CREDENTIALS_USR} -Danypoint.password=${ANYPOINT_CREDENTIALS_PSW}'
       		}
     	}
     }
