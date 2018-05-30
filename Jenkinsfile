@@ -1,5 +1,5 @@
 pipeline {
-	agent agent { docker { image 'maven:3.5.3' } }
+	agent { docker { image 'maven:3.5.3' } }
 	
 	environment {
         MVN_SETTINGS = credentials('priv_settings.xml')
