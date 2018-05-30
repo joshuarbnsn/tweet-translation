@@ -1,4 +1,4 @@
-pipeline {
+pipeline {	
 	agent { docker { image 'maven:3.5.3' } }
 	
 	environment {
