@@ -1,3 +1,3 @@
 #! /bin/bash
 
-echo "Hello World"
+echo '{"status": { "name": "value"}}' | jq --raw-output .status.name
