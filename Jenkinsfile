@@ -1,24 +1,15 @@
-pipeline {	
-	agent { docker { image 'maven:3.5.3' } }
-	
-	environment {
-        MVN_SETTINGS = credentials('priv_settings.xml')
-    }
-    
+def appGitUrl='git@github.com:myorg/my-api.git'
+def accessToken
+
+pipeline {
+    agent any
     stages {
-        stage('build') {
+        stage('Checkout Source Code') { 
+        // Get code from a GitHub repository
             steps {
-                sh 'mvn --version'
-				sh 'mvn clean -s ${MVN_SETTINGS}'
+                git credentialsId: 'github1', url: "git@github.com:joshuarbnsn/tweet-translation.git"
+                sh "bash ./deploy.sh"
             }
         }
-        stage('Deploy ARM') {
-      		environment {
-        		ANYPOINT_CREDENTIALS = credentials('anypoint.credentials')
-      		}
-      		steps {
-        		sh 'mvn package org.mule.tools.maven:mule-maven-plugin:deploy -s ${MVN_SETTINGS} -Darm.target.name=local-runtime-3.9.1 -Danypoint.username=${ANYPOINT_CREDENTIALS_USR} -Danypoint.password=${ANYPOINT_CREDENTIALS_PSW}'
-      		}
-    	}
     }
 }
