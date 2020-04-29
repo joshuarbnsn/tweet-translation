@@ -11,7 +11,7 @@ pipeline {
         // Get code from a GitHub repository
             steps {
                 git credentialsId: 'github1', url: "git@github.com:joshuarbnsn/tweet-translation.git"
-                #sh "bash ./deploy.sh"
+                //sh "bash ./deploy.sh"
                 echo ${environment}
             }
         }
