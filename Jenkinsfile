@@ -10,9 +10,9 @@ pipeline {
         stage('Checkout Source Code') { 
         // Get code from a GitHub repository
             steps {
-                git credentialsId: 'github1', url: "git@github.com:joshuarbnsn/tweet-translation.git"
+                //git credentialsId: 'github1', url: "git@github.com:joshuarbnsn/tweet-translation.git"
                 //sh "bash ./deploy.sh"
-                echo "${environment}"
+                echo "Env: ${environment}"
             }
         }
     }
